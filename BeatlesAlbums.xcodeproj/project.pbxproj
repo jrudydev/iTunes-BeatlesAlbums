@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		934CAE0B24202568003E8273 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934CAE0A24202568003E8273 /* AppDelegate.swift */; };
+		934CAE0D24202568003E8273 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934CAE0C24202568003E8273 /* SceneDelegate.swift */; };
+		934CAE0F24202568003E8273 /* AlbumsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934CAE0E24202568003E8273 /* AlbumsTableViewController.swift */; };
+		934CAE1224202568003E8273 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 934CAE1024202568003E8273 /* Main.storyboard */; };
+		934CAE142420256F003E8273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 934CAE132420256F003E8273 /* Assets.xcassets */; };
+		934CAE172420256F003E8273 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 934CAE152420256F003E8273 /* LaunchScreen.storyboard */; };
+		934CAE2024202807003E8273 /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934CAE1F24202807003E8273 /* AlbumTableViewCell.swift */; };
+		934CAE2324202A3F003E8273 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934CAE2224202A3F003E8273 /* Album.swift */; };
+		934CAE2624202D52003E8273 /* iTunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934CAE2524202D52003E8273 /* iTunesAPI.swift */; };
+		934CAE292420962A003E8273 /* UIImageView+FetchURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934CAE282420962A003E8273 /* UIImageView+FetchURL.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		934CAE0724202568003E8273 /* BeatlesAlbums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeatlesAlbums.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		934CAE0A24202568003E8273 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		934CAE0C24202568003E8273 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		934CAE0E24202568003E8273 /* AlbumsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsTableViewController.swift; sourceTree = "<group>"; };
+		934CAE1124202568003E8273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		934CAE132420256F003E8273 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		934CAE162420256F003E8273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		934CAE182420256F003E8273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		934CAE1F24202807003E8273 /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
+		934CAE2224202A3F003E8273 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		934CAE2524202D52003E8273 /* iTunesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesAPI.swift; sourceTree = "<group>"; };
+		934CAE282420962A003E8273 /* UIImageView+FetchURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+FetchURL.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		934CAE0424202568003E8273 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9349D2FC2420B77200C76FD5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				934CAE0A24202568003E8273 /* AppDelegate.swift */,
+				934CAE0C24202568003E8273 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9349D2FD2420B7DA00C76FD5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				934CAE1024202568003E8273 /* Main.storyboard */,
+				934CAE132420256F003E8273 /* Assets.xcassets */,
+				934CAE152420256F003E8273 /* LaunchScreen.storyboard */,
+				934CAE182420256F003E8273 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		934CADFE24202568003E8273 = {
+			isa = PBXGroup;
+			children = (
+				934CAE0924202568003E8273 /* BeatlesAlbums */,
+				934CAE0824202568003E8273 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		934CAE0824202568003E8273 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				934CAE0724202568003E8273 /* BeatlesAlbums.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		934CAE0924202568003E8273 /* BeatlesAlbums */ = {
+			isa = PBXGroup;
+			children = (
+				9349D2FC2420B77200C76FD5 /* App */,
+				934CAE27242095A1003E8273 /* Extensions */,
+				934CAE2424202D13003E8273 /* Network */,
+				934CAE2124202A28003E8273 /* Models */,
+				934CAE1E242027E0003E8273 /* Views */,
+				934CAE0E24202568003E8273 /* AlbumsTableViewController.swift */,
+				9349D2FD2420B7DA00C76FD5 /* Resources */,
+			);
+			path = BeatlesAlbums;
+			sourceTree = "<group>";
+		};
+		934CAE1E242027E0003E8273 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				934CAE1F24202807003E8273 /* AlbumTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		934CAE2124202A28003E8273 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				934CAE2224202A3F003E8273 /* Album.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		934CAE2424202D13003E8273 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				934CAE2524202D52003E8273 /* iTunesAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		934CAE27242095A1003E8273 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				934CAE282420962A003E8273 /* UIImageView+FetchURL.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		934CAE0624202568003E8273 /* BeatlesAlbums */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 934CAE1B2420256F003E8273 /* Build configuration list for PBXNativeTarget "BeatlesAlbums" */;
+			buildPhases = (
+				934CAE0324202568003E8273 /* Sources */,
+				934CAE0424202568003E8273 /* Frameworks */,
+				934CAE0524202568003E8273 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeatlesAlbums;
+			productName = BeatlesAlbums;
+			productReference = 934CAE0724202568003E8273 /* BeatlesAlbums.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		934CADFF24202568003E8273 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "JRudy Gaming";
+				TargetAttributes = {
+					934CAE0624202568003E8273 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 934CAE0224202568003E8273 /* Build configuration list for PBXProject "BeatlesAlbums" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 934CADFE24202568003E8273;
+			productRefGroup = 934CAE0824202568003E8273 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				934CAE0624202568003E8273 /* BeatlesAlbums */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		934CAE0524202568003E8273 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				934CAE172420256F003E8273 /* LaunchScreen.storyboard in Resources */,
+				934CAE142420256F003E8273 /* Assets.xcassets in Resources */,
+				934CAE1224202568003E8273 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		934CAE0324202568003E8273 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				934CAE0F24202568003E8273 /* AlbumsTableViewController.swift in Sources */,
+				934CAE0B24202568003E8273 /* AppDelegate.swift in Sources */,
+				934CAE0D24202568003E8273 /* SceneDelegate.swift in Sources */,
+				934CAE2024202807003E8273 /* AlbumTableViewCell.swift in Sources */,
+				934CAE2624202D52003E8273 /* iTunesAPI.swift in Sources */,
+				934CAE2324202A3F003E8273 /* Album.swift in Sources */,
+				934CAE292420962A003E8273 /* UIImageView+FetchURL.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		934CAE1024202568003E8273 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				934CAE1124202568003E8273 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		934CAE152420256F003E8273 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				934CAE162420256F003E8273 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		934CAE192420256F003E8273 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		934CAE1A2420256F003E8273 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		934CAE1C2420256F003E8273 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZRTG86ZKHQ;
+				INFOPLIST_FILE = BeatlesAlbums/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jrudygaming.BeatlesAlbums;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		934CAE1D2420256F003E8273 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZRTG86ZKHQ;
+				INFOPLIST_FILE = BeatlesAlbums/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jrudygaming.BeatlesAlbums;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		934CAE0224202568003E8273 /* Build configuration list for PBXProject "BeatlesAlbums" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				934CAE192420256F003E8273 /* Debug */,
+				934CAE1A2420256F003E8273 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		934CAE1B2420256F003E8273 /* Build configuration list for PBXNativeTarget "BeatlesAlbums" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				934CAE1C2420256F003E8273 /* Debug */,
+				934CAE1D2420256F003E8273 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 934CADFF24202568003E8273 /* Project object */;
+}
