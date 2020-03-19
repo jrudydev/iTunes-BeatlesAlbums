@@ -9,12 +9,21 @@
 import Foundation
 
 class iTunesAPI {
-  let endpoint = "https://itunes.apple.com/lookup?id=136975&entity=album"
+  enum EndPoint {
+    static let baseURL = URL(string: "https://itunes.apple.com/lookup?id=136975&entity=album")!
+    
+    case albums
+    
+    var url: URL {
+      switch self {
+      case .albums:
+        return EndPoint.baseURL
+      }
+    }
+  }
   
   func fetchAlbums(_ completion: @escaping ([Album], Error?) -> Void) {
-    guard let url = URL(string: self.endpoint) else { fatalError("URL not parsable.") }
-    
-    let _ = URLSession.shared.dataTask(with: url) { data, response, error in
+    let _ = URLSession.shared.dataTask(with: EndPoint.albums.url) { data, response, error in
       guard let data = data, error == nil else {
         completion([], error)
         return
