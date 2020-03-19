@@ -10,20 +10,34 @@ import Foundation
 
 class iTunesAPI {
   enum EndPoint {
-    static let baseURL = URL(string: "https://itunes.apple.com/lookup?id=136975&entity=album")!
+    static let baseURL = "https://itunes.apple.com/lookup"
+    static let beatlesId = "136975"
     
     case albums
     
-    var url: URL {
+    var url: URL? {
       switch self {
       case .albums:
-        return EndPoint.baseURL
+        guard var components = URLComponents(string: EndPoint.baseURL) else { return nil }
+        
+        components.queryItems = self.queryItems
+        return components.url
+      }
+    }
+    
+    var queryItems: [URLQueryItem] {
+      switch self {
+      case .albums:
+        return [URLQueryItem(name: "id", value: "\(EndPoint.beatlesId)"),
+                URLQueryItem(name: "entity", value: "album")]
       }
     }
   }
   
   func fetchAlbums(_ completion: @escaping ([Album], Error?) -> Void) {
-    let _ = URLSession.shared.dataTask(with: EndPoint.albums.url) { data, response, error in
+    guard let url = EndPoint.albums.url else { return }
+    
+    let _ = URLSession.shared.dataTask(with: url) { data, response, error in
       guard let data = data, error == nil else {
         completion([], error)
         return
