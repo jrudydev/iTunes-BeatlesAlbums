@@ -44,7 +44,7 @@ class iTunesAPI {
       }
       
       do {
-        let jsonData = try JSONDecoder().decode(Albums.self, from: data)
+        let jsonData = try JSONDecoder().decode(AlbumsResponse.self, from: data)
         if let results = jsonData.results {
           completion(results, nil)
         }

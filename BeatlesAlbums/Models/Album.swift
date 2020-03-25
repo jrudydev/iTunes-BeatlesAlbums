@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Albums: Codable {
+struct AlbumsResponse: Codable {
   var results: [Album]?
 }
 
